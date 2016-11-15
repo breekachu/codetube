@@ -56,10 +56,18 @@ return [
 
         's3' => [
             'driver' => 's3',
-            'key' => 'your-key',
-            'secret' => 'your-secret',
-            'region' => 'your-region',
-            'bucket' => 'your-bucket',
+            'key' => getenv('S3_KEY'),
+            'secret' => getenv('S3_SECRET'),
+            'region' => 'us-east-1',
+            'bucket' => 'codecourse',
+        ],
+
+        's3images' => [
+            'driver' => 's3',
+            'key' => getenv('S3_KEY'),
+            'secret' => getenv('S3_SECRET'),
+            'region' => 'us-east-1',
+            'bucket' => 'images.mycodetube.com',
         ],
 
     ],
