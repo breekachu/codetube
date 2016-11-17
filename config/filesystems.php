@@ -54,12 +54,12 @@ return [
             'visibility' => 'public',
         ],
 
-        's3' => [
+        's3drop' => [
             'driver' => 's3',
             'key' => getenv('S3_KEY'),
             'secret' => getenv('S3_SECRET'),
             'region' => 'us-east-1',
-            'bucket' => 'codecourse',
+            'bucket' => 'drop.mycodetube.com',
         ],
 
         's3images' => [
